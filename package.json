@@ -1,0 +1,17 @@
+{
+  "name": "project-guardian",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Satish",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "simple-git": "^3.32.3",
+    "typescript": "^5.9.3"
+  }
+}
