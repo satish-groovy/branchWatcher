@@ -1,17 +1,31 @@
 {
-  "name": "project-guardian",
+  "name": "branch-watcher",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "branch-watcher": "dist/cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "branch-watcher": "ts-node src/cli.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node scripts/install-hooks.js"
   },
   "keywords": [],
   "author": "Satish",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "chokidar": "^5.0.0",
+    "inquirer": "^9.0.0",
     "simple-git": "^3.32.3",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2"
   }
 }
